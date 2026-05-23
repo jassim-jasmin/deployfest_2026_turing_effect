@@ -1,0 +1,784 @@
+{
+  "roi_scenarios": [
+    {
+      "scenario_id": "ROI_001",
+      "city": "Hyderabad",
+      "locality": "HITEC City",
+      "property_type": "3BHK Apartment",
+      "purchase_price_lakhs": 85.0,
+      "monthly_rent_current": 32299,
+      "appreciation_rate_annual_pct": 14.3,
+      "loan_details": {
+        "loan_amount_lakhs": 59.5,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.85,
+        "tenure_years": 20,
+        "emi_monthly": 52961
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 4.56,
+        "rental_yield_net_pct": 3.42,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -20662,
+        "break_even_years": 21.9,
+        "value_at_5yr_lakhs": 165.8,
+        "value_at_10yr_lakhs": 323.5,
+        "total_return_10yr_pct": 280.6,
+        "irr_10yr_pct": 15.0,
+        "best_exit_horizon_years": 5
+      },
+      "investment_verdict": "STRONG BUY",
+      "verdict_reason": "IT corridor with 14.3% YoY appreciation. Metro connectivity drives rental premium."
+    },
+    {
+      "scenario_id": "ROI_002",
+      "city": "Hyderabad",
+      "locality": "Gachibowli",
+      "property_type": "2BHK Apartment",
+      "purchase_price_lakhs": 147.4,
+      "monthly_rent_current": 56012,
+      "appreciation_rate_annual_pct": 16.9,
+      "loan_details": {
+        "loan_amount_lakhs": 103.2,
+        "loan_pct": 70,
+        "interest_rate_pct": 9.22,
+        "tenure_years": 20,
+        "emi_monthly": 94298
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 4.56,
+        "rental_yield_net_pct": 3.42,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -38286,
+        "break_even_years": 21.9,
+        "value_at_5yr_lakhs": 321.8,
+        "value_at_10yr_lakhs": 702.5,
+        "total_return_10yr_pct": 376.6,
+        "irr_10yr_pct": 17.4,
+        "best_exit_horizon_years": 5
+      },
+      "investment_verdict": "STRONG BUY",
+      "verdict_reason": "IT corridor with 16.9% YoY appreciation. Metro connectivity drives rental premium."
+    },
+    {
+      "scenario_id": "ROI_003",
+      "city": "Bangalore",
+      "locality": "Whitefield",
+      "property_type": "3BHK Apartment",
+      "purchase_price_lakhs": 211.1,
+      "monthly_rent_current": 75996,
+      "appreciation_rate_annual_pct": 13.4,
+      "loan_details": {
+        "loan_amount_lakhs": 147.8,
+        "loan_pct": 70,
+        "interest_rate_pct": 9.21,
+        "tenure_years": 20,
+        "emi_monthly": 134954
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 4.32,
+        "rental_yield_net_pct": 3.24,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -58958,
+        "break_even_years": 23.1,
+        "value_at_5yr_lakhs": 395.9,
+        "value_at_10yr_lakhs": 742.4,
+        "total_return_10yr_pct": 251.7,
+        "irr_10yr_pct": 14.1,
+        "best_exit_horizon_years": 5
+      },
+      "investment_verdict": "STRONG BUY",
+      "verdict_reason": "IT corridor with 13.4% YoY appreciation. Metro connectivity drives rental premium."
+    },
+    {
+      "scenario_id": "ROI_004",
+      "city": "Bangalore",
+      "locality": "Sarjapur Road",
+      "property_type": "2BHK Apartment",
+      "purchase_price_lakhs": 73.4,
+      "monthly_rent_current": 26424,
+      "appreciation_rate_annual_pct": 11.8,
+      "loan_details": {
+        "loan_amount_lakhs": 51.4,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.8,
+        "tenure_years": 20,
+        "emi_monthly": 45569
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 4.32,
+        "rental_yield_net_pct": 3.24,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -19145,
+        "break_even_years": 23.1,
+        "value_at_5yr_lakhs": 128.2,
+        "value_at_10yr_lakhs": 223.9,
+        "total_return_10yr_pct": 205.0,
+        "irr_10yr_pct": 12.6,
+        "best_exit_horizon_years": 5
+      },
+      "investment_verdict": "BUY",
+      "verdict_reason": "Solid fundamentals. 4.3% rental yield with steady 11.8% appreciation."
+    },
+    {
+      "scenario_id": "ROI_005",
+      "city": "Pune",
+      "locality": "Hinjewadi",
+      "property_type": "3BHK Apartment",
+      "purchase_price_lakhs": 155.2,
+      "monthly_rent_current": 49663,
+      "appreciation_rate_annual_pct": 12.0,
+      "loan_details": {
+        "loan_amount_lakhs": 108.6,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.84,
+        "tenure_years": 20,
+        "emi_monthly": 96631
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 3.84,
+        "rental_yield_net_pct": 2.88,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -46968,
+        "break_even_years": 26.0,
+        "value_at_5yr_lakhs": 273.5,
+        "value_at_10yr_lakhs": 482.0,
+        "total_return_10yr_pct": 210.6,
+        "irr_10yr_pct": 12.6,
+        "best_exit_horizon_years": 5
+      },
+      "investment_verdict": "BUY",
+      "verdict_reason": "Solid fundamentals. 3.8% rental yield with steady 12.0% appreciation."
+    },
+    {
+      "scenario_id": "ROI_006",
+      "city": "Pune",
+      "locality": "Wakad",
+      "property_type": "3BHK Apartment",
+      "purchase_price_lakhs": 170.9,
+      "monthly_rent_current": 54688,
+      "appreciation_rate_annual_pct": 10.7,
+      "loan_details": {
+        "loan_amount_lakhs": 119.6,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.67,
+        "tenure_years": 20,
+        "emi_monthly": 105108
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 3.84,
+        "rental_yield_net_pct": 2.88,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -50420,
+        "break_even_years": 26.0,
+        "value_at_5yr_lakhs": 284.1,
+        "value_at_10yr_lakhs": 472.3,
+        "total_return_10yr_pct": 176.4,
+        "irr_10yr_pct": 11.4,
+        "best_exit_horizon_years": 5
+      },
+      "investment_verdict": "BUY",
+      "verdict_reason": "Solid fundamentals. 3.8% rental yield with steady 10.7% appreciation."
+    },
+    {
+      "scenario_id": "ROI_007",
+      "city": "Pune",
+      "locality": "Baner",
+      "property_type": "2BHK Apartment",
+      "purchase_price_lakhs": 146.2,
+      "monthly_rent_current": 46784,
+      "appreciation_rate_annual_pct": 11.9,
+      "loan_details": {
+        "loan_amount_lakhs": 102.3,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.57,
+        "tenure_years": 20,
+        "emi_monthly": 89266
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 3.84,
+        "rental_yield_net_pct": 2.88,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -42482,
+        "break_even_years": 26.0,
+        "value_at_5yr_lakhs": 256.5,
+        "value_at_10yr_lakhs": 450.0,
+        "total_return_10yr_pct": 207.8,
+        "irr_10yr_pct": 12.5,
+        "best_exit_horizon_years": 5
+      },
+      "investment_verdict": "BUY",
+      "verdict_reason": "Solid fundamentals. 3.8% rental yield with steady 11.9% appreciation."
+    },
+    {
+      "scenario_id": "ROI_008",
+      "city": "Mumbai",
+      "locality": "Powai",
+      "property_type": "2BHK Apartment",
+      "purchase_price_lakhs": 189.3,
+      "monthly_rent_current": 79506,
+      "appreciation_rate_annual_pct": 9.9,
+      "loan_details": {
+        "loan_amount_lakhs": 132.5,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.66,
+        "tenure_years": 20,
+        "emi_monthly": 116340
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 5.04,
+        "rental_yield_net_pct": 3.78,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -36834,
+        "break_even_years": 19.8,
+        "value_at_5yr_lakhs": 303.5,
+        "value_at_10yr_lakhs": 486.6,
+        "total_return_10yr_pct": 157.1,
+        "irr_10yr_pct": 11.1,
+        "best_exit_horizon_years": 5
+      },
+      "investment_verdict": "BUY",
+      "verdict_reason": "Solid fundamentals. 5.0% rental yield with steady 9.9% appreciation."
+    },
+    {
+      "scenario_id": "ROI_009",
+      "city": "Mumbai",
+      "locality": "Thane West",
+      "property_type": "3BHK Apartment",
+      "purchase_price_lakhs": 227.1,
+      "monthly_rent_current": 95381,
+      "appreciation_rate_annual_pct": 10.5,
+      "loan_details": {
+        "loan_amount_lakhs": 159.0,
+        "loan_pct": 70,
+        "interest_rate_pct": 9.12,
+        "tenure_years": 20,
+        "emi_monthly": 144258
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 5.04,
+        "rental_yield_net_pct": 3.78,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -48877,
+        "break_even_years": 19.8,
+        "value_at_5yr_lakhs": 374.1,
+        "value_at_10yr_lakhs": 616.4,
+        "total_return_10yr_pct": 171.4,
+        "irr_10yr_pct": 11.7,
+        "best_exit_horizon_years": 5
+      },
+      "investment_verdict": "BUY",
+      "verdict_reason": "Solid fundamentals. 5.0% rental yield with steady 10.5% appreciation."
+    },
+    {
+      "scenario_id": "ROI_010",
+      "city": "Noida",
+      "locality": "Sector 150",
+      "property_type": "2BHK Apartment",
+      "purchase_price_lakhs": 104.9,
+      "monthly_rent_current": 29372,
+      "appreciation_rate_annual_pct": 9.8,
+      "loan_details": {
+        "loan_amount_lakhs": 73.4,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.62,
+        "tenure_years": 20,
+        "emi_monthly": 64283
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 3.36,
+        "rental_yield_net_pct": 2.52,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -34911,
+        "break_even_years": 29.8,
+        "value_at_5yr_lakhs": 167.4,
+        "value_at_10yr_lakhs": 267.2,
+        "total_return_10yr_pct": 154.7,
+        "irr_10yr_pct": 10.4,
+        "best_exit_horizon_years": 5
+      },
+      "investment_verdict": "BUY",
+      "verdict_reason": "Solid fundamentals. 3.4% rental yield with steady 9.8% appreciation."
+    },
+    {
+      "scenario_id": "ROI_011",
+      "city": "Bangalore",
+      "locality": "Koramangala",
+      "property_type": "2BHK Apartment",
+      "purchase_price_lakhs": 181.2,
+      "monthly_rent_current": 65232,
+      "appreciation_rate_annual_pct": 15.8,
+      "loan_details": {
+        "loan_amount_lakhs": 126.8,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.65,
+        "tenure_years": 20,
+        "emi_monthly": 111281
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 4.32,
+        "rental_yield_net_pct": 3.24,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -46049,
+        "break_even_years": 23.1,
+        "value_at_5yr_lakhs": 377.3,
+        "value_at_10yr_lakhs": 785.7,
+        "total_return_10yr_pct": 333.6,
+        "irr_10yr_pct": 16.3,
+        "best_exit_horizon_years": 5
+      },
+      "investment_verdict": "STRONG BUY",
+      "verdict_reason": "IT corridor with 15.8% YoY appreciation. Metro connectivity drives rental premium."
+    },
+    {
+      "scenario_id": "ROI_012",
+      "city": "Hyderabad",
+      "locality": "Kondapur",
+      "property_type": "3BHK Apartment",
+      "purchase_price_lakhs": 120.6,
+      "monthly_rent_current": 45827,
+      "appreciation_rate_annual_pct": 13.5,
+      "loan_details": {
+        "loan_amount_lakhs": 84.4,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.93,
+        "tenure_years": 20,
+        "emi_monthly": 75575
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 4.56,
+        "rental_yield_net_pct": 3.42,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -29748,
+        "break_even_years": 21.9,
+        "value_at_5yr_lakhs": 227.2,
+        "value_at_10yr_lakhs": 427.9,
+        "total_return_10yr_pct": 254.8,
+        "irr_10yr_pct": 14.2,
+        "best_exit_horizon_years": 5
+      },
+      "investment_verdict": "STRONG BUY",
+      "verdict_reason": "IT corridor with 13.5% YoY appreciation. Metro connectivity drives rental premium."
+    },
+    {
+      "scenario_id": "ROI_013",
+      "city": "Pune",
+      "locality": "Viman Nagar",
+      "property_type": "2BHK Apartment",
+      "purchase_price_lakhs": 157.5,
+      "monthly_rent_current": 50400,
+      "appreciation_rate_annual_pct": 12.1,
+      "loan_details": {
+        "loan_amount_lakhs": 110.2,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.72,
+        "tenure_years": 20,
+        "emi_monthly": 97218
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 3.84,
+        "rental_yield_net_pct": 2.88,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -46818,
+        "break_even_years": 26.0,
+        "value_at_5yr_lakhs": 278.8,
+        "value_at_10yr_lakhs": 493.6,
+        "total_return_10yr_pct": 213.4,
+        "irr_10yr_pct": 12.7,
+        "best_exit_horizon_years": 5
+      },
+      "investment_verdict": "BUY",
+      "verdict_reason": "Solid fundamentals. 3.8% rental yield with steady 12.1% appreciation."
+    },
+    {
+      "scenario_id": "ROI_014",
+      "city": "Chennai",
+      "locality": "OMR",
+      "property_type": "3BHK Apartment",
+      "purchase_price_lakhs": 133.6,
+      "monthly_rent_current": 40080,
+      "appreciation_rate_annual_pct": 10.9,
+      "loan_details": {
+        "loan_amount_lakhs": 93.5,
+        "loan_pct": 70,
+        "interest_rate_pct": 9.09,
+        "tenure_years": 20,
+        "emi_monthly": 84684
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 3.6,
+        "rental_yield_net_pct": 2.7,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -44604,
+        "break_even_years": 27.8,
+        "value_at_5yr_lakhs": 224.1,
+        "value_at_10yr_lakhs": 375.9,
+        "total_return_10yr_pct": 181.4,
+        "irr_10yr_pct": 11.5,
+        "best_exit_horizon_years": 5
+      },
+      "investment_verdict": "BUY",
+      "verdict_reason": "Solid fundamentals. 3.6% rental yield with steady 10.9% appreciation."
+    },
+    {
+      "scenario_id": "ROI_015",
+      "city": "Bangalore",
+      "locality": "Electronic City",
+      "property_type": "3BHK Apartment",
+      "purchase_price_lakhs": 84.6,
+      "monthly_rent_current": 30455,
+      "appreciation_rate_annual_pct": 13.2,
+      "loan_details": {
+        "loan_amount_lakhs": 59.2,
+        "loan_pct": 70,
+        "interest_rate_pct": 9.23,
+        "tenure_years": 20,
+        "emi_monthly": 54160
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 4.32,
+        "rental_yield_net_pct": 3.24,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -23705,
+        "break_even_years": 23.1,
+        "value_at_5yr_lakhs": 157.3,
+        "value_at_10yr_lakhs": 292.3,
+        "total_return_10yr_pct": 245.5,
+        "irr_10yr_pct": 13.9,
+        "best_exit_horizon_years": 5
+      },
+      "investment_verdict": "BUY",
+      "verdict_reason": "Solid fundamentals. 4.3% rental yield with steady 13.2% appreciation."
+    },
+    {
+      "scenario_id": "ROI_016",
+      "city": "Mumbai",
+      "locality": "Andheri East",
+      "property_type": "3BHK Apartment",
+      "purchase_price_lakhs": 251.1,
+      "monthly_rent_current": 105461,
+      "appreciation_rate_annual_pct": 8.6,
+      "loan_details": {
+        "loan_amount_lakhs": 175.8,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.94,
+        "tenure_years": 20,
+        "emi_monthly": 157467
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 5.04,
+        "rental_yield_net_pct": 3.78,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -52006,
+        "break_even_years": 19.8,
+        "value_at_5yr_lakhs": 379.3,
+        "value_at_10yr_lakhs": 573.0,
+        "total_return_10yr_pct": 128.2,
+        "irr_10yr_pct": 9.9,
+        "best_exit_horizon_years": 10
+      },
+      "investment_verdict": "HOLD",
+      "verdict_reason": "Stable market. Moderate 8.6% appreciation. Watch for supply overhang."
+    },
+    {
+      "scenario_id": "ROI_017",
+      "city": "Noida",
+      "locality": "Sector 62",
+      "property_type": "3BHK Apartment",
+      "purchase_price_lakhs": 116.9,
+      "monthly_rent_current": 32732,
+      "appreciation_rate_annual_pct": 8.1,
+      "loan_details": {
+        "loan_amount_lakhs": 81.8,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.71,
+        "tenure_years": 20,
+        "emi_monthly": 72105
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 3.36,
+        "rental_yield_net_pct": 2.52,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -39373,
+        "break_even_years": 29.8,
+        "value_at_5yr_lakhs": 172.6,
+        "value_at_10yr_lakhs": 254.7,
+        "total_return_10yr_pct": 117.9,
+        "irr_10yr_pct": 8.8,
+        "best_exit_horizon_years": 10
+      },
+      "investment_verdict": "HOLD",
+      "verdict_reason": "Stable market. Moderate 8.1% appreciation. Watch for supply overhang."
+    },
+    {
+      "scenario_id": "ROI_018",
+      "city": "Chennai",
+      "locality": "Sholinganallur",
+      "property_type": "2BHK Apartment",
+      "purchase_price_lakhs": 70.0,
+      "monthly_rent_current": 21000,
+      "appreciation_rate_annual_pct": 7.2,
+      "loan_details": {
+        "loan_amount_lakhs": 49.0,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.57,
+        "tenure_years": 20,
+        "emi_monthly": 42740
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 3.6,
+        "rental_yield_net_pct": 2.7,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -21740,
+        "break_even_years": 27.8,
+        "value_at_5yr_lakhs": 99.1,
+        "value_at_10yr_lakhs": 140.3,
+        "total_return_10yr_pct": 100.4,
+        "irr_10yr_pct": 8.1,
+        "best_exit_horizon_years": 10
+      },
+      "investment_verdict": "HOLD",
+      "verdict_reason": "Stable market. Moderate 7.2% appreciation. Watch for supply overhang."
+    },
+    {
+      "scenario_id": "ROI_019",
+      "city": "Mumbai",
+      "locality": "Mira Road",
+      "property_type": "3BHK Apartment",
+      "purchase_price_lakhs": 337.3,
+      "monthly_rent_current": 141666,
+      "appreciation_rate_annual_pct": 6.7,
+      "loan_details": {
+        "loan_amount_lakhs": 236.1,
+        "loan_pct": 70,
+        "interest_rate_pct": 9.09,
+        "tenure_years": 20,
+        "emi_monthly": 213802
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 5.04,
+        "rental_yield_net_pct": 3.78,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -72136,
+        "break_even_years": 19.8,
+        "value_at_5yr_lakhs": 466.5,
+        "value_at_10yr_lakhs": 645.1,
+        "total_return_10yr_pct": 91.3,
+        "irr_10yr_pct": 8.2,
+        "best_exit_horizon_years": 10
+      },
+      "investment_verdict": "HOLD",
+      "verdict_reason": "Stable market. Moderate 6.7% appreciation. Watch for supply overhang."
+    },
+    {
+      "scenario_id": "ROI_020",
+      "city": "Noida",
+      "locality": "Greater Noida West",
+      "property_type": "3BHK Apartment",
+      "purchase_price_lakhs": 96.2,
+      "monthly_rent_current": 26936,
+      "appreciation_rate_annual_pct": 6.8,
+      "loan_details": {
+        "loan_amount_lakhs": 67.3,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.75,
+        "tenure_years": 20,
+        "emi_monthly": 59509
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 3.36,
+        "rental_yield_net_pct": 2.52,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -32573,
+        "break_even_years": 29.8,
+        "value_at_5yr_lakhs": 133.7,
+        "value_at_10yr_lakhs": 185.7,
+        "total_return_10yr_pct": 93.0,
+        "irr_10yr_pct": 7.6,
+        "best_exit_horizon_years": 10
+      },
+      "investment_verdict": "HOLD",
+      "verdict_reason": "Stable market. Moderate 6.8% appreciation. Watch for supply overhang."
+    },
+    {
+      "scenario_id": "ROI_021",
+      "city": "Chennai",
+      "locality": "Medavakkam",
+      "property_type": "2BHK Apartment",
+      "purchase_price_lakhs": 117.7,
+      "monthly_rent_current": 35310,
+      "appreciation_rate_annual_pct": 6.4,
+      "loan_details": {
+        "loan_amount_lakhs": 82.4,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.55,
+        "tenure_years": 20,
+        "emi_monthly": 71760
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 3.6,
+        "rental_yield_net_pct": 2.7,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -36450,
+        "break_even_years": 27.8,
+        "value_at_5yr_lakhs": 160.5,
+        "value_at_10yr_lakhs": 218.9,
+        "total_return_10yr_pct": 86.0,
+        "irr_10yr_pct": 7.3,
+        "best_exit_horizon_years": 10
+      },
+      "investment_verdict": "HOLD",
+      "verdict_reason": "Stable market. Moderate 6.4% appreciation. Watch for supply overhang."
+    },
+    {
+      "scenario_id": "ROI_022",
+      "city": "Pune",
+      "locality": "Nibm Road",
+      "property_type": "3BHK Apartment",
+      "purchase_price_lakhs": 178.6,
+      "monthly_rent_current": 57152,
+      "appreciation_rate_annual_pct": 8.9,
+      "loan_details": {
+        "loan_amount_lakhs": 125.0,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.98,
+        "tenure_years": 20,
+        "emi_monthly": 112322
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 3.84,
+        "rental_yield_net_pct": 2.88,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -55170,
+        "break_even_years": 26.0,
+        "value_at_5yr_lakhs": 273.5,
+        "value_at_10yr_lakhs": 418.9,
+        "total_return_10yr_pct": 134.5,
+        "irr_10yr_pct": 9.7,
+        "best_exit_horizon_years": 10
+      },
+      "investment_verdict": "HOLD",
+      "verdict_reason": "Stable market. Moderate 8.9% appreciation. Watch for supply overhang."
+    },
+    {
+      "scenario_id": "ROI_023",
+      "city": "Noida",
+      "locality": "Expressway",
+      "property_type": "2BHK Apartment",
+      "purchase_price_lakhs": 78.4,
+      "monthly_rent_current": 21952,
+      "appreciation_rate_annual_pct": 3.3,
+      "loan_details": {
+        "loan_amount_lakhs": 54.9,
+        "loan_pct": 70,
+        "interest_rate_pct": 9.22,
+        "tenure_years": 20,
+        "emi_monthly": 50156
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 3.36,
+        "rental_yield_net_pct": 2.52,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -28204,
+        "break_even_years": 29.8,
+        "value_at_5yr_lakhs": 92.2,
+        "value_at_10yr_lakhs": 108.5,
+        "total_return_10yr_pct": 38.4,
+        "irr_10yr_pct": 4.4,
+        "best_exit_horizon_years": 10
+      },
+      "investment_verdict": "AVOID",
+      "verdict_reason": "Oversupplied micro-market. 3.3% appreciation insufficient to offset carrying costs."
+    },
+    {
+      "scenario_id": "ROI_024",
+      "city": "Mumbai",
+      "locality": "Kharghar",
+      "property_type": "3BHK Apartment",
+      "purchase_price_lakhs": 316.3,
+      "monthly_rent_current": 132846,
+      "appreciation_rate_annual_pct": 5.3,
+      "loan_details": {
+        "loan_amount_lakhs": 221.4,
+        "loan_pct": 70,
+        "interest_rate_pct": 9.2,
+        "tenure_years": 20,
+        "emi_monthly": 202065
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 5.04,
+        "rental_yield_net_pct": 3.78,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -69219,
+        "break_even_years": 19.8,
+        "value_at_5yr_lakhs": 409.5,
+        "value_at_10yr_lakhs": 530.1,
+        "total_return_10yr_pct": 67.6,
+        "irr_10yr_pct": 6.9,
+        "best_exit_horizon_years": 10
+      },
+      "investment_verdict": "AVOID",
+      "verdict_reason": "Oversupplied micro-market. 5.3% appreciation insufficient to offset carrying costs."
+    },
+    {
+      "scenario_id": "ROI_025",
+      "city": "Chennai",
+      "locality": "Perambur",
+      "property_type": "2BHK Apartment",
+      "purchase_price_lakhs": 103.4,
+      "monthly_rent_current": 31020,
+      "appreciation_rate_annual_pct": 4.6,
+      "loan_details": {
+        "loan_amount_lakhs": 72.4,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.79,
+        "tenure_years": 20,
+        "emi_monthly": 64147
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 3.6,
+        "rental_yield_net_pct": 2.7,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -33127,
+        "break_even_years": 27.8,
+        "value_at_5yr_lakhs": 129.5,
+        "value_at_10yr_lakhs": 162.1,
+        "total_return_10yr_pct": 56.8,
+        "irr_10yr_pct": 5.7,
+        "best_exit_horizon_years": 10
+      },
+      "investment_verdict": "AVOID",
+      "verdict_reason": "Oversupplied micro-market. 4.6% appreciation insufficient to offset carrying costs."
+    },
+    {
+      "scenario_id": "ROI_026",
+      "city": "Hyderabad",
+      "locality": "Narsingi",
+      "property_type": "2BHK Apartment",
+      "purchase_price_lakhs": 158.3,
+      "monthly_rent_current": 60154,
+      "appreciation_rate_annual_pct": 6.5,
+      "loan_details": {
+        "loan_amount_lakhs": 110.8,
+        "loan_pct": 70,
+        "interest_rate_pct": 8.78,
+        "tenure_years": 20,
+        "emi_monthly": 98136
+      },
+      "calculated_returns": {
+        "rental_yield_gross_pct": 4.56,
+        "rental_yield_net_pct": 3.42,
+        "monthly_cashflow_positive": false,
+        "monthly_cashflow_amount": -37982,
+        "break_even_years": 21.9,
+        "value_at_5yr_lakhs": 216.9,
+        "value_at_10yr_lakhs": 297.2,
+        "total_return_10yr_pct": 87.7,
+        "irr_10yr_pct": 7.8,
+        "best_exit_horizon_years": 10
+      },
+      "investment_verdict": "AVOID",
+      "verdict_reason": "Oversupplied micro-market. 6.5% appreciation insufficient to offset carrying costs."
+    }
+  ]
+}
