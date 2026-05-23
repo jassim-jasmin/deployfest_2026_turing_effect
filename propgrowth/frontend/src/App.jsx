@@ -57,6 +57,8 @@ const MOCK_RAG = [
   "Noida Authority has notified a Special Development Zone for the Film City project in Sector 21 Greater Noida covering 230 hectares. The integrated media and entertainment complex will house production studios. Sector 150 and Sector 168 have been repositioned to target entertainment industry professionals."
 ];
 
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+
 export default function App() {
   const [appState, setAppState] = useState('input'); // 'input' | 'analyzing' | 'hitl' | 'complete'
   const [isLiveMode, setIsLiveMode] = useState(false);
@@ -123,7 +125,7 @@ export default function App() {
   // Safe fetch telemetry summary from live backend
   const fetchLiveTelemetry = async () => {
     try {
-      const res = await fetch('http://localhost:8000/api/telemetry');
+      const res = await fetch(`${API_BASE}/api/telemetry`);
       if (res.ok) {
         const data = await res.json();
         setTelemetry(data);
@@ -148,7 +150,7 @@ export default function App() {
 
     pollIntervalRef.current = setInterval(async () => {
       try {
-        const res = await fetch(`http://localhost:8000/api/analyze/status/${thread_id}`);
+        const res = await fetch(`${API_BASE}/api/analyze/status/${thread_id}`);
         if (!res.ok) throw new Error("Status API request failed.");
 
         const data = await res.json();
@@ -200,7 +202,7 @@ export default function App() {
 
     if (isLiveMode) {
       try {
-        const res = await fetch('http://localhost:8000/api/analyze/start', {
+        const res = await fetch(`${API_BASE}/api/analyze/start`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(inputData)
@@ -306,7 +308,7 @@ export default function App() {
           approved_comps: hitlData.approved_comps,
           analyst_notes: hitlData.analyst_notes
         };
-        const res = await fetch('http://localhost:8000/api/analyze/resume', {
+        const res = await fetch(`${API_BASE}/api/analyze/resume`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
