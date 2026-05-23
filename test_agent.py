@@ -3,7 +3,8 @@ import os
 import asyncio
 
 # Add backend directory to sys.path to enable local imports during test run
-backend_dir = r"c:\Users\akhil\python_projects\deploy-fest\deployfest_2026_turing_effect\propgrowth\backend"
+current_dir = os.path.dirname(os.path.abspath(__file__))
+backend_dir = os.path.join(current_dir, "propgrowth", "backend")
 sys.path.insert(0, backend_dir)
 
 from rag import initialize_rag

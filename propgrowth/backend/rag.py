@@ -1,4 +1,9 @@
 import os
+try:
+    import posthog
+    posthog.capture = lambda *args, **kwargs: None
+except ImportError:
+    pass
 import chromadb
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 
@@ -18,7 +23,10 @@ def initialize_rag():
     global chroma_client, collection
     
     # Establish persistent client mapping to chroma_db folder
-    chroma_client = chromadb.PersistentClient(path=DB_PATH)
+    chroma_client = chromadb.PersistentClient(
+        path=DB_PATH,
+        settings=chromadb.Settings(anonymized_telemetry=False)
+    )
     
     # Core embedding model: SentenceTransformer with all-MiniLM-L6-v2
     embedding_function = SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
