@@ -1,0 +1,181 @@
+{
+  "hitl_scenarios": [
+    {
+      "scenario_id": "HITL_001",
+      "property_queried": "Hinjewadi Phase 2, Pune",
+      "city": "Pune",
+      "ai_presented_comps_count": 4,
+      "analyst_action": "APPROVE_WITH_NOTES",
+      "comps_removed_count": 1,
+      "removal_reason": "Comp 2 is 3km away \u2014 outside valid comparable radius.",
+      "analyst_notes": "Strong buy fundamentals here. Infosys and Wipro campuses within 800m justify the rental premium. Removing Wakad comp as it distorts psf average downward. Metro Line 3 extension is a real 2027 catalyst.",
+      "sentiment": "BULLISH",
+      "sentiment_keywords": [
+        "strong",
+        "buy",
+        "catalyst",
+        "premium"
+      ],
+      "expected_score_adjustment": 3,
+      "approved_comps_count": 3
+    },
+    {
+      "scenario_id": "HITL_002",
+      "property_queried": "Whitefield, Bangalore",
+      "city": "Bangalore",
+      "ai_presented_comps_count": 3,
+      "analyst_action": "APPROVE_ALL",
+      "comps_removed_count": 0,
+      "removal_reason": null,
+      "analyst_notes": "All comps valid. Whitefield Metro is now operational \u2014 this alone justifies the 18% YoY premium. Solid BUY.",
+      "sentiment": "BULLISH",
+      "sentiment_keywords": [
+        "solid",
+        "buy",
+        "valid",
+        "premium"
+      ],
+      "expected_score_adjustment": 2,
+      "approved_comps_count": 3
+    },
+    {
+      "scenario_id": "HITL_003",
+      "property_queried": "HITEC City, Hyderabad",
+      "city": "Hyderabad",
+      "ai_presented_comps_count": 4,
+      "analyst_action": "MODIFY_AND_APPROVE",
+      "comps_removed_count": 1,
+      "removal_reason": "Comp 4 is 7km away \u2014 outside valid comparable radius.",
+      "analyst_notes": "Removing the Manikonda comp (6km away, different micro-market). HITEC City fundamentals remain exceptional. Microsoft and Google offices at walking distance make this a category-1 investment zone.",
+      "sentiment": "BULLISH",
+      "sentiment_keywords": [
+        "exceptional"
+      ],
+      "expected_score_adjustment": 4,
+      "approved_comps_count": 3
+    },
+    {
+      "scenario_id": "HITL_004",
+      "property_queried": "Baner, Pune",
+      "city": "Pune",
+      "ai_presented_comps_count": 3,
+      "analyst_action": "APPROVE_WITH_NOTES",
+      "comps_removed_count": 1,
+      "removal_reason": "Comp 3 is 3km away \u2014 outside valid comparable radius.",
+      "analyst_notes": "Baner-Balewadi corridor is underpriced vs Hinjewadi. Strong social infra. Approving all comps. Recommend long horizon \u2014 7-10 years for maximum capital gains.",
+      "sentiment": "BULLISH",
+      "sentiment_keywords": [
+        "strong",
+        "underpriced"
+      ],
+      "expected_score_adjustment": 1,
+      "approved_comps_count": 2
+    },
+    {
+      "scenario_id": "HITL_005",
+      "property_queried": "Electronic City, Bangalore",
+      "city": "Bangalore",
+      "ai_presented_comps_count": 3,
+      "analyst_action": "FLAG_RISKS",
+      "comps_removed_count": 0,
+      "removal_reason": null,
+      "analyst_notes": "Concern: oversupply of 2BHK units in Phase 1 and Phase 2. Vacancy rates elevated at 11-13%. Rental yields weak. Approving with caution \u2014 only suitable for long-horizon investors comfortable with short-term pain.",
+      "sentiment": "BEARISH",
+      "sentiment_keywords": [
+        "concern",
+        "oversupply",
+        "weak",
+        "caution"
+      ],
+      "expected_score_adjustment": -4,
+      "approved_comps_count": 3
+    },
+    {
+      "scenario_id": "HITL_006",
+      "property_queried": "Gachibowli, Hyderabad",
+      "city": "Hyderabad",
+      "ai_presented_comps_count": 5,
+      "analyst_action": "APPROVE_ALL",
+      "comps_removed_count": 0,
+      "removal_reason": null,
+      "analyst_notes": "Gachibowli Financial District is the strongest micro-market in India right now. All comps valid and conservative. Strong buy \u2014 buyer should move fast in this corridor.",
+      "sentiment": "BULLISH",
+      "sentiment_keywords": [
+        "strong",
+        "buy",
+        "valid",
+        "conservative"
+      ],
+      "expected_score_adjustment": 5,
+      "approved_comps_count": 5
+    },
+    {
+      "scenario_id": "HITL_007",
+      "property_queried": "Thane West, Mumbai",
+      "city": "Mumbai",
+      "ai_presented_comps_count": 5,
+      "analyst_action": "MODIFY_AND_APPROVE",
+      "comps_removed_count": 1,
+      "removal_reason": "Comp 4 is 4km away \u2014 outside valid comparable radius.",
+      "analyst_notes": "Removing the Mira Road comp \u2014 separate market entirely. Thane West fundamentals are solid but appreciation will lag IT corridors. Good for end-users, moderate for pure investors.",
+      "sentiment": "NEUTRAL",
+      "sentiment_keywords": [
+        "lag"
+      ],
+      "expected_score_adjustment": 0,
+      "approved_comps_count": 4
+    },
+    {
+      "scenario_id": "HITL_008",
+      "property_queried": "Sector 137, Noida",
+      "city": "Noida",
+      "ai_presented_comps_count": 5,
+      "analyst_action": "FLAG_RISKS",
+      "comps_removed_count": 0,
+      "removal_reason": null,
+      "analyst_notes": "Risk: massive unsold inventory from 2017-2021 era is still being absorbed. Builder delays in this corridor are a concern. Approving with a risk flag \u2014 only RERA-registered ready-to-move.",
+      "sentiment": "BEARISH",
+      "sentiment_keywords": [
+        "concern",
+        "risk",
+        "lag",
+        "delay"
+      ],
+      "expected_score_adjustment": -5,
+      "approved_comps_count": 5
+    },
+    {
+      "scenario_id": "HITL_009",
+      "property_queried": "OMR, Chennai",
+      "city": "Chennai",
+      "ai_presented_comps_count": 4,
+      "analyst_action": "APPROVE_WITH_NOTES",
+      "comps_removed_count": 1,
+      "removal_reason": "Comp 4 is 7km away \u2014 outside valid comparable radius.",
+      "analyst_notes": "OMR is a long corridor \u2014 comps from beyond Sholinganallur are not comparable. Approving first 3. Steady market, not exciting but stable income play for conservative investors.",
+      "sentiment": "NEUTRAL",
+      "sentiment_keywords": [],
+      "expected_score_adjustment": 1,
+      "approved_comps_count": 3
+    },
+    {
+      "scenario_id": "HITL_010",
+      "property_queried": "Koramangala, Bangalore",
+      "city": "Bangalore",
+      "ai_presented_comps_count": 3,
+      "analyst_action": "APPROVE_ALL",
+      "comps_removed_count": 0,
+      "removal_reason": null,
+      "analyst_notes": "Koramangala 5th Block is recession-proof Bangalore real estate. All comps valid and underpriced. Startup ecosystem + premium social infra = best rental yield in city. Strong buy.",
+      "sentiment": "BULLISH",
+      "sentiment_keywords": [
+        "strong",
+        "buy",
+        "valid",
+        "underpriced"
+      ],
+      "expected_score_adjustment": 5,
+      "approved_comps_count": 3
+    }
+  ]
+}

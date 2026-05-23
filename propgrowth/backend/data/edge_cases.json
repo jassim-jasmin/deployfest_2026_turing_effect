@@ -1,0 +1,284 @@
+{
+  "edge_cases": [
+    {
+      "case_id": "EDGE_001",
+      "category": "VERY_HIGH_BUDGET",
+      "input": {
+        "address": "Koramangala 5th Block",
+        "city": "Bangalore",
+        "budget_lakhs": 450,
+        "bhk_type": "4BHK+",
+        "investment_horizon_years": 10
+      },
+      "expected_behavior": "Return ultra-premium comps only (villas, penthouses). Luxury segment appreciation 8-12%.",
+      "potential_failure_point": "price_per_sqft calculation if budget > 500L",
+      "mock_comp_hint": "Return Prestige/Brigade villas and luxury penthouses only"
+    },
+    {
+      "case_id": "EDGE_002",
+      "category": "VERY_HIGH_BUDGET",
+      "input": {
+        "address": "Juhu Beach Road",
+        "city": "Mumbai",
+        "budget_lakhs": 520,
+        "bhk_type": "4BHK+",
+        "investment_horizon_years": 7
+      },
+      "expected_behavior": "Handle Mumbai luxury tier (sea-facing). Price/sqft can exceed \u20b91L/sqft.",
+      "potential_failure_point": "ROI calc overflow at very high absolute values",
+      "mock_comp_hint": "Sea-facing Juhu/Bandra luxury apartments only"
+    },
+    {
+      "case_id": "EDGE_003",
+      "category": "VERY_LOW_BUDGET",
+      "input": {
+        "address": "Sector 62",
+        "city": "Noida",
+        "budget_lakhs": 22,
+        "bhk_type": "1BHK",
+        "investment_horizon_years": 5
+      },
+      "expected_behavior": "Return studio/micro-apartment comps. Rental yield focus.",
+      "potential_failure_point": "No comps found if budget filter too strict \u2014 return nearest bracket",
+      "mock_comp_hint": "Sub-25L studio listings"
+    },
+    {
+      "case_id": "EDGE_004",
+      "category": "VERY_LOW_BUDGET",
+      "input": {
+        "address": "Medavakkam",
+        "city": "Chennai",
+        "budget_lakhs": 18,
+        "bhk_type": "1BHK",
+        "investment_horizon_years": 3
+      },
+      "expected_behavior": "Affordable segment. Fallback to nearest budget bracket if no exact matches.",
+      "potential_failure_point": "Empty comps array crashing score calculator",
+      "mock_comp_hint": "Affordable 1BHK listings near budget"
+    },
+    {
+      "case_id": "EDGE_005",
+      "category": "SHORT_HORIZON",
+      "input": {
+        "address": "Hinjewadi Phase 2",
+        "city": "Pune",
+        "budget_lakhs": 85,
+        "bhk_type": "2BHK",
+        "investment_horizon_years": 1
+      },
+      "expected_behavior": "1-year horizon means trading not investing. Flag as short-term flip scenario.",
+      "potential_failure_point": "Appreciation formula gives near-zero gain for 1yr \u2014 score may show 0",
+      "mock_comp_hint": "Current-year listings only"
+    },
+    {
+      "case_id": "EDGE_006",
+      "category": "SHORT_HORIZON",
+      "input": {
+        "address": "HITEC City",
+        "city": "Hyderabad",
+        "budget_lakhs": 95,
+        "bhk_type": "2BHK",
+        "investment_horizon_years": 1
+      },
+      "expected_behavior": "Flag: 1-year horizon unlikely to recover transaction costs (stamp duty ~5%).",
+      "potential_failure_point": "ROI shows negative net return after transaction costs",
+      "mock_comp_hint": "Recent listings with quick resale potential"
+    },
+    {
+      "case_id": "EDGE_007",
+      "category": "UNKNOWN_LOCALITY",
+      "input": {
+        "address": "Nandoshi Village",
+        "city": "Pune",
+        "budget_lakhs": 65,
+        "bhk_type": "2BHK",
+        "investment_horizon_years": 5
+      },
+      "expected_behavior": "Unknown locality \u2014 fallback to city-level insights. Warn user data is approximate.",
+      "potential_failure_point": "KeyError in locality_insights dict lookup",
+      "mock_comp_hint": "Return generic Pune comps as fallback"
+    },
+    {
+      "case_id": "EDGE_008",
+      "category": "UNKNOWN_LOCALITY",
+      "input": {
+        "address": "Zingari Layout",
+        "city": "Bangalore",
+        "budget_lakhs": 80,
+        "bhk_type": "2BHK",
+        "investment_horizon_years": 7
+      },
+      "expected_behavior": "Misspelled/unknown locality. Fuzzy match or fallback to nearest known locality.",
+      "potential_failure_point": "rag_search returns empty \u2014 no grounding context",
+      "mock_comp_hint": "Generic Bangalore outskirts comps"
+    },
+    {
+      "case_id": "EDGE_009",
+      "category": "MISMATCH_BHK_BUDGET",
+      "input": {
+        "address": "Whitefield",
+        "city": "Bangalore",
+        "budget_lakhs": 30,
+        "bhk_type": "4BHK+",
+        "investment_horizon_years": 5
+      },
+      "expected_behavior": "4BHK with 30L budget is impossible in Bangalore. Return cheapest available and warn user.",
+      "potential_failure_point": "Budget filter returns empty list",
+      "mock_comp_hint": "Return disclaimer + nearest affordable BHK type"
+    },
+    {
+      "case_id": "EDGE_010",
+      "category": "MISMATCH_BHK_BUDGET",
+      "input": {
+        "address": "Powai",
+        "city": "Mumbai",
+        "budget_lakhs": 25,
+        "bhk_type": "3BHK",
+        "investment_horizon_years": 7
+      },
+      "expected_behavior": "3BHK Powai for 25L doesn't exist. Return closest match with price mismatch warning.",
+      "potential_failure_point": "Score calc divides by zero if no comps",
+      "mock_comp_hint": "Show 1BHK options with upgrade recommendation"
+    },
+    {
+      "case_id": "EDGE_011",
+      "category": "OVERSUPPLIED_MARKET",
+      "input": {
+        "address": "Greater Noida West",
+        "city": "Noida",
+        "budget_lakhs": 55,
+        "bhk_type": "2BHK",
+        "investment_horizon_years": 10
+      },
+      "expected_behavior": "High unsold inventory. AI should flag oversupply. Score should be capped low.",
+      "potential_failure_point": "Demand index artificially high from old data",
+      "mock_comp_hint": "Include stalled project warnings in report"
+    },
+    {
+      "case_id": "EDGE_012",
+      "category": "OVERSUPPLIED_MARKET",
+      "input": {
+        "address": "Sector 150",
+        "city": "Noida",
+        "budget_lakhs": 70,
+        "bhk_type": "3BHK",
+        "investment_horizon_years": 10
+      },
+      "expected_behavior": "Sports City project may have distorted original projections. Flag builder credibility.",
+      "potential_failure_point": "RAG context may not contain specific builder delay info",
+      "mock_comp_hint": "Filter for RERA-registered only"
+    },
+    {
+      "case_id": "EDGE_013",
+      "category": "FLOOD_PRONE_AREA",
+      "input": {
+        "address": "Saidapet Low Zone",
+        "city": "Chennai",
+        "budget_lakhs": 60,
+        "bhk_type": "2BHK",
+        "investment_horizon_years": 5
+      },
+      "expected_behavior": "Known flood-risk area. Report must include flood risk warning prominently.",
+      "potential_failure_point": "Flood risk score missing from locality data for new/unknown localities",
+      "mock_comp_hint": "Add flood disclaimer to report header"
+    },
+    {
+      "case_id": "EDGE_014",
+      "category": "FLOOD_PRONE_AREA",
+      "input": {
+        "address": "Kurla East",
+        "city": "Mumbai",
+        "budget_lakhs": 75,
+        "bhk_type": "2BHK",
+        "investment_horizon_years": 7
+      },
+      "expected_behavior": "Low-lying Mumbai suburb. Monsoon flood risk must be in risk_factors.",
+      "potential_failure_point": "Risk section omits flood if not explicitly in RAG context",
+      "mock_comp_hint": "Include BMC flood zone data"
+    },
+    {
+      "case_id": "EDGE_015",
+      "category": "NEW_DEVELOPMENT_ZONE",
+      "input": {
+        "address": "Navi Mumbai Airport Zone",
+        "city": "Mumbai",
+        "budget_lakhs": 120,
+        "bhk_type": "3BHK",
+        "investment_horizon_years": 10
+      },
+      "expected_behavior": "Less than 2 years of price data. AI must note limited historical data.",
+      "potential_failure_point": "Appreciation rate calc unreliable with < 24 months data",
+      "mock_comp_hint": "Project-launch pricing only, no resale comps"
+    },
+    {
+      "case_id": "EDGE_016",
+      "category": "HIGH_NRI_DEMAND",
+      "input": {
+        "address": "Kondapur",
+        "city": "Hyderabad",
+        "budget_lakhs": 95,
+        "bhk_type": "2BHK",
+        "investment_horizon_years": 7
+      },
+      "expected_behavior": "NRI-heavy locality. USD/INR hedging argument should appear in report.",
+      "potential_failure_point": "NRI demand not in standard locality_insights schema",
+      "mock_comp_hint": "Include NRI-friendly projects with dollar rental yields"
+    },
+    {
+      "case_id": "EDGE_017",
+      "category": "HIGH_NRI_DEMAND",
+      "input": {
+        "address": "Kothrud",
+        "city": "Pune",
+        "budget_lakhs": 90,
+        "bhk_type": "3BHK",
+        "investment_horizon_years": 10
+      },
+      "expected_behavior": "High NRI demand from Pune diaspora in US/UK. Report should note foreign remittance advantage.",
+      "potential_failure_point": "NRI angle missing if not prompted",
+      "mock_comp_hint": "Premium projects with NRI payment plans"
+    },
+    {
+      "case_id": "EDGE_018",
+      "category": "COMMERCIAL_ADJACENT",
+      "input": {
+        "address": "Hadapsar MIDC Zone",
+        "city": "Pune",
+        "budget_lakhs": 70,
+        "bhk_type": "2BHK",
+        "investment_horizon_years": 7
+      },
+      "expected_behavior": "Adjacent to MIDC industrial zone \u2014 noise/air quality concerns vs industrial demand.",
+      "potential_failure_point": "Infrastructure score may be misleadingly high due to job density",
+      "mock_comp_hint": "Include industrial zone proximity warning"
+    },
+    {
+      "case_id": "EDGE_019",
+      "category": "COMMERCIAL_ADJACENT",
+      "input": {
+        "address": "Whitefield ITPL Fringe",
+        "city": "Bangalore",
+        "budget_lakhs": 88,
+        "bhk_type": "2BHK",
+        "investment_horizon_years": 5
+      },
+      "expected_behavior": "Commercial-residential boundary. ITPL expansion may eat into residential zones.",
+      "potential_failure_point": "Zoning rezoning risk not captured in static RAG data",
+      "mock_comp_hint": "Flag DP zoning revision risk"
+    },
+    {
+      "case_id": "EDGE_020",
+      "category": "VERY_LONG_HORIZON",
+      "input": {
+        "address": "Sector 150 Sports City",
+        "city": "Noida",
+        "budget_lakhs": 65,
+        "bhk_type": "2BHK",
+        "investment_horizon_years": 15
+      },
+      "expected_behavior": "15-year horizon. Projections become speculative. AI should widen confidence intervals.",
+      "potential_failure_point": "Compound appreciation formula gives astronomically high values for 15yr",
+      "mock_comp_hint": "Cap projections at 10yr and add note about extrapolation risk"
+    }
+  ]
+}
