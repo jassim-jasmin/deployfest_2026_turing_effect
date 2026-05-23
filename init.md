@@ -4,7 +4,7 @@ Build a full-stack AI Property Growth Predictor & Investment Analyst called "Pro
 An AI-powered real estate investment analyst that predicts future property growth potential. It uses Gemini (free tier) for reasoning/generation, LangGraph for state machine orchestration, ChromaDB for grounding (zoning laws, metro expansion, master plans), and incorporates Human-in-the-Loop (HITL) verification to let analysts review comparable properties (Comps) before finalizing reports.
 
 ## Tech Stack (Free & Hackathon-Friendly)
-- **Backend**: Python + FastAPI
+- **Backend**: Python 3.11 + FastAPI
 - **Agent Orchestrator**: LangGraph
 - **LLM**: Google Gemini 2.5 Flash (via free API key from Google AI Studio)
 - **RAG / Vector Database**: ChromaDB + free SentenceTransformers (`all-MiniLM-L6-v2`) or Gemini Embeddings
