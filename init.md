@@ -46,11 +46,14 @@ propgrowth/
 
 ## Step 2: Backend - External Tools (tools.py)
 Create these tool functions with clean schemas:
-1. `get_market_data(address_or_zip)`
-   - Returns mock historical sales data, list of 3-4 Comparable Properties ("Comps"), and current median listing price.
-2. `get_demographics(zip_code)`
-   - Returns population growth rate, local school ratings, and median household income trends.
-
+1. `search_properties(location, budget_min, budget_max, bhk_type)`
+   - Returns mock property listings in Indian cities (used as Comparable Properties / "Comps").
+2. `calculate_roi(price, monthly_rent, appreciation_rate)`
+   - Returns `rental_yield`, `break_even_years`, and `10yr_returns` (used for financial projections in the final investment report).
+3. `get_locality_insights(locality, city)`
+   - Returns infrastructure score, demand index, population growth, and price trends.
+4. `rag_search(query)`
+   - Queries ChromaDB for local zoning laws, neighborhood master plans, and upcoming infrastructure projects.
 ---
 
 ## Step 3: Backend - Grounding & RAG (rag.py)
@@ -68,9 +71,9 @@ To protect against hallucinating growth drivers:
 Implement a state machine with the following nodes:
 ```mermaid
 graph TD
-    Start([Start: Address + Horizon]) --> FetchData[1. Fetch Market & Demographics]
+    Start([Start: Address + Horizon]) --> FetchData[1. Fetch Market & Locality Insights]
     FetchData --> InjectRAG[2. Inject RAG Context]
-    InjectRAG --> PreCalc[3. Calculate Preliminary Score]
+    InjectRAG --> PreCalc[3. Calculate Preliminary Score & ROI]
     PreCalc --> HITL{4. Wait for Human Oversight}
     HITL -->|Approved/Edited Comps| CalculateFinal[5. Calculate Weighted Score]
     CalculateFinal --> GenerateReport[6. Generate Investment Report]
